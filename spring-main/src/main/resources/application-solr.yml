@@ -1,0 +1,4 @@
+spring:
+  data:
+    solr:
+      host: http://isxcode:8983/solr/edge_index

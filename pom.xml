@@ -28,12 +28,12 @@
 		<module>basic-demo</module>
 		<module>datasourcex-demo</module>
 		<module>hadoop-demo</module>
-		<module>hbase-demo</module>
 		<module>java-demo</module>
 		<module>zookeeper-demo</module>
 		<module>jsoup-demo</module>
 		<module>poi-demo</module>
 		<module>ocr-demo</module>
+		<module>solr-demo</module>
 	</modules>
 
 	<dependencies>
