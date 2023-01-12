@@ -1,0 +1,8 @@
+###
+GET {{url}}/jsoup/scanAndDownloadPic
+
+###
+GET {{url}}/jsoup/parseHtmlText
+
+###
+GET {{url}}/jsoup/downloadImages
