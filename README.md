@@ -14,6 +14,4 @@ cd spring-main && mvn clean package
 java -jar target/spring-demo.jar
 ```
 
-```http request
-wget http://localhost:8080/hello/say
-```
+> wget http://localhost:8080/hello/say
