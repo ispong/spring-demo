@@ -3,24 +3,34 @@
 </h1>
 
 <h4 align="center">
-    Demo For Spring
+    更快，更直接，更有效的学习Spring相关后端技术！    
 </h4>
 
+#### 启动spring-demo项目
 
 ```bash
+# 拉取代码
 git clone https://github.com/ispong/spring-demo.git
+
+# 安装项目依赖
 cd spring-demo && mvn clean install
-cd spring-main && mvn clean package && cd target
+
+# 构建项目
+cd spring-main && mvn clean package 
+
+# 指定端口号，启动项目
 java -jar spring-demo.jar --server.port=8080
 ```
 
-- GET请求
+#### 调用spring-demo接口
+
+- get请求样例
 
 ```bash
 curl 'http://localhost:8080/hello/say'
 ```
 
-- POST请求
+- post请求样例
 
 ```bash
 curl 'http://localhost:8080/oracle/testConnect' \
@@ -29,3 +39,7 @@ curl 'http://localhost:8080/oracle/testConnect' \
   -H 'Content-Type: application/json;charset=UTF-8' \
   --data-raw '{"jdbcUrl": "jdbc:oracle:thin:@isxcode:XE","username": "ispong","password": "ispong123"}' 
 ```
+
+#### 开发手册
+
+- https://github.com/ispong/spring-demo/blob/main/CONTRIBUTING.md
