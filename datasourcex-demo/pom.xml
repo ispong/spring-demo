@@ -4,14 +4,23 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>datasourcex-demo</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <parent>
+        <groupId>com.isxcode.demo</groupId>
+        <artifactId>spring-demo-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+    <artifactId>datasourcex-demo</artifactId>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.dtstack.dtcenter</groupId>
+            <artifactId>common.loader.core</artifactId>
+            <version>1.8.0-RELEASE</version>
+        </dependency>
+
+    </dependencies>
+
 
 </project>

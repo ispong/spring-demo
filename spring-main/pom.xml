@@ -45,35 +45,47 @@
         <!--            <version>0.0.1-SNAPSHOT</version>-->
         <!--        </dependency>-->
 
-        <dependency>
-            <groupId>com.isxcode.demo</groupId>
-            <artifactId>oracle-demo</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>com.isxcode.demo</groupId>-->
+        <!--            <artifactId>oracle-demo</artifactId>-->
+        <!--            <version>0.0.1-SNAPSHOT</version>-->
+        <!--        </dependency>-->
 
-        <dependency>
-            <groupId>com.isxcode.demo</groupId>
-            <artifactId>groovy-demo</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>com.isxcode.demo</groupId>-->
+        <!--            <artifactId>groovy-demo</artifactId>-->
+        <!--            <version>0.0.1-SNAPSHOT</version>-->
+        <!--        </dependency>-->
 
-        <dependency>
-            <groupId>com.isxcode.demo</groupId>
-            <artifactId>java-demo</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>com.isxcode.demo</groupId>-->
+        <!--            <artifactId>datasourcex-demo</artifactId>-->
+        <!--            <version>0.0.1-SNAPSHOT</version>-->
+        <!--        </dependency>-->
 
-        <dependency>
-            <groupId>com.isxcode.demo</groupId>
-            <artifactId>command-demo</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>com.isxcode.demo</groupId>-->
+        <!--            <artifactId>java-demo</artifactId>-->
+        <!--            <version>0.0.1-SNAPSHOT</version>-->
+        <!--        </dependency>-->
 
-        <dependency>
-            <groupId>com.isxcode.demo</groupId>
-            <artifactId>hadoop-demo</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>com.isxcode.demo</groupId>-->
+        <!--            <artifactId>command-demo</artifactId>-->
+        <!--            <version>0.0.1-SNAPSHOT</version>-->
+        <!--        </dependency>-->
+
+        <!--        <dependency>-->
+        <!--            <groupId>com.isxcode.demo</groupId>-->
+        <!--            <artifactId>hadoop-demo</artifactId>-->
+        <!--            <version>0.0.1-SNAPSHOT</version>-->
+        <!--        </dependency>-->
+
+        <!--        <dependency>-->
+        <!--            <groupId>com.isxcode.demo</groupId>-->
+        <!--            <artifactId>datasourcex-demo</artifactId>-->
+        <!--            <version>0.0.1-SNAPSHOT</version>-->
+        <!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
