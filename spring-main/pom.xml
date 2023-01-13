@@ -65,6 +65,12 @@
 
         <dependency>
             <groupId>com.isxcode.demo</groupId>
+            <artifactId>command-demo</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.isxcode.demo</groupId>
             <artifactId>hadoop-demo</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
