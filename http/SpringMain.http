@@ -12,3 +12,11 @@ GET {{url}}/spring/caching/deleteDog
 
 ###
 GET {{url}}/spring/caching/getDog
+
+###
+POST {{url}}/spring/aop/test
+Content-Type: application/json
+
+{
+  "username": "ispong"
+}
