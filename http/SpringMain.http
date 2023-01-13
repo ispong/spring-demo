@@ -1,2 +1,14 @@
 ###
 GET {{url}}/hello/say
+
+###
+GET {{url}}/spring/caching/addDog
+
+###
+GET {{url}}/spring/caching/updateDog
+
+###
+GET {{url}}/spring/caching/deleteDog
+
+###
+GET {{url}}/spring/caching/getDog

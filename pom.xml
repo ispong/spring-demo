@@ -35,6 +35,7 @@
 		<module>solr-demo</module>
         <module>oracle-demo</module>
 		<module>groovy-demo</module>
+		<module>guava-demo</module>
 	</modules>
 
 	<dependencies>
