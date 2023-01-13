@@ -25,7 +25,6 @@
 	<modules>
 		<module>spring-main</module>
 		<module>atlas-demo</module>
-		<module>basic-demo</module>
 		<module>datasourcex-demo</module>
 		<module>hadoop-demo</module>
 		<module>java-demo</module>
@@ -35,7 +34,8 @@
 		<module>ocr-demo</module>
 		<module>solr-demo</module>
         <module>oracle-demo</module>
-    </modules>
+		<module>groovy-demo</module>
+	</modules>
 
 	<dependencies>
 
