@@ -24,7 +24,6 @@ public class OracleController {
         Connection connection = null;
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            DriverManager.setLoginTimeout(5);
             connection = DriverManager.getConnection(oracleReq.getJdbcUrl(), oracleReq.getUsername(), oracleReq.getPassword());
             return connection == null ? "connect为空，连接失败" : "连接成功";
         } catch (ClassNotFoundException | SQLException e) {

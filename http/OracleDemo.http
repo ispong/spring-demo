@@ -3,7 +3,7 @@ POST {{url}}/oracle/testConnect
 Content-Type: application/json
 
 {
-  "jdbcUrl": "jdbc:oracle:thin:@106.15.78.238:1521:XE",
-  "username": "sususu",
-  "password": "nQWE!@#123456"
+  "jdbcUrl": "jdbc:oracle:thin:@isxcode.com:1521:XE",
+  "username": "ispong",
+  "password": "ispong123"
 }
