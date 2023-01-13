@@ -34,7 +34,8 @@
 		<module>poi-demo</module>
 		<module>ocr-demo</module>
 		<module>solr-demo</module>
-	</modules>
+        <module>oracle-demo</module>
+    </modules>
 
 	<dependencies>
 
