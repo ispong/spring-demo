@@ -16,7 +16,7 @@ git clone https://github.com/ispong/spring-demo.git
 cd spring-demo && mvn clean install
 
 # 构建项目
-cd spring-main && mvn clean package 
+cd spring-main && mvn clean package
 
 # 指定端口号，启动项目
 java -jar spring-demo.jar --server.port=8080

@@ -1,0 +1,9 @@
+
+###
+GET http://192.168.16.79:8080/command/python?processName=11
+
+###
+GET http://192.168.16.79:8080/command/backLog?processName=spring-demo.jar
+
+
+

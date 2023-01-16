@@ -2,9 +2,17 @@ package com.isxcode.demo.command.controller;
 
 import com.isxcode.demo.command.service.CommandService;
 import lombok.RequiredArgsConstructor;
+import org.apache.logging.log4j.util.Strings;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @RequestMapping("/command")
@@ -49,7 +57,6 @@ public class CommandController {
         return commandService.executeCatCommand("isxcode", "ispong", "/home/ispong/logs/123456789.log");
     }
 
-
     @GetMapping("/open/chunjun/status")
     public String getChunjunStatus() {
 
@@ -58,12 +65,12 @@ public class CommandController {
         return commandService.executeRemoteCommandReturnLog("isxcode", "ispong", getYarnStatus, 5000);
     }
 
-    @GetMapping("/open/chunjun/yarn")
-    public String getChunjunYarn() {
+    @GetMapping("/backLog")
+    public String getBackLog(String processName) {
 
-        String getYarnStatus = "yarn logs -applicationId " + " application_1667184312043_0479";
+        String commands = "ps -e -o pid,command | grep " + processName;
 
-        return commandService.executeRemoteCommandReturnLog("isxcode", "ispong", getYarnStatus, 10000);
+        return commandService.executeRemoteCommandReturnLog("192.168.16.79", "dehoop", commands, 10000);
     }
 }
 
