@@ -19,7 +19,7 @@ cd spring-demo && mvn clean install
 cd spring-main && mvn clean package
 
 # 指定端口号，启动项目
-java -jar spring-demo.jar --server.port=8080
+java -jar spring-demo.jar --server.port=30177
 ```
 
 #### 调用spring-demo接口
@@ -27,7 +27,7 @@ java -jar spring-demo.jar --server.port=8080
 - get请求样例
 
 ```bash
-curl 'http://localhost:8080/hello/say'
+curl 'http://localhost:30177/hello/say'
 ```
 
 - post请求样例
@@ -37,7 +37,9 @@ curl 'http://localhost:8080/clickhouse/testConnect' \
   -H 'Accept: application/json, text/plain, */*' \
   -H 'Accept-Language: zh-CN' \
   -H 'Content-Type: application/json;charset=UTF-8' \
-  --data-raw '{"jdbcUrl": "jdbc:clickhouse://1.1.1.1:1/fanruan_db","username": "","password": ""}' 
+  --data-raw '{"jdbcUrl": "jdbc:clickhouse://8.142.144.100:30144/fanruan_db","username": "","password": "","sql":"select * from dwd_medcresdat limit 5"}' 
+#  --data '{"jdbcUrl": "jdbc:clickhouse://192.168.5.126:8123/df_test","username": "default","password": "Clickhouse"}' 
+# --data-raw '{"jdbcUrl": "jdbc:clickhouse://192.168.5.126:8123/df_test","username": "default","password": "Clickhouse"}' 
 ```
 
 #### 开发手册

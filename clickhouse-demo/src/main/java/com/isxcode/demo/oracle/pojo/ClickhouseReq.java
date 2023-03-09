@@ -10,4 +10,6 @@ public class ClickhouseReq {
     private String username;
 
     private String password;
+
+    private String sql;
 }

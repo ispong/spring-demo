@@ -5,5 +5,202 @@ GET http://192.168.16.79:8080/command/python?processName=11
 ###
 GET http://192.168.16.79:8080/command/backLog?processName=spring-demo.jar
 
+###
+POST
+Content-Type: application/json
+
+{
+  "job": {
+    "content": [
+      {
+        "reader": {
+          "name": "hdfsreader",
+          "parameter": {
+            "column": [
+              {
+                "index": 0,
+                "name": "fitemid",
+                "type": "string"
+              },
+              {
+                "index": 1,
+                "name": "cfeaswarehouseid",
+                "type": "string"
+              },
+              {
+                "index": 2,
+                "name": "fqijian",
+                "type": "string"
+              },
+              {
+                "index": 3,
+                "name": "fyear",
+                "type": "string"
+              }
+            ],
+            "defaultFS": "hdfs://defan-poc:30116/",
+            "encoding": "UTF-8",
+            "fieldDelimiter": ",",
+            "fileName": "/ds=*",
+            "fileType": "TEXT",
+            "fullColumnName": [
+              "fitemid",
+              "cfeaswarehouseid",
+              "fqijian",
+              "fyear",
+              "fmonth",
+              "fdate",
+              "xt",
+              "fcustid",
+              "fcust_name",
+              "fqty",
+              "famount",
+              "cfsitecodeid",
+              "kb",
+              "fhsl",
+              "cfreabatetype",
+              "fispresent",
+              "fnumber",
+              "fitem_number",
+              "cfeaswarehousename"
+            ],
+            "fullColumnType": [
+              "string",
+              "st
+              ring
+              ","
+              string
+              ","
+              string
+              ","
+              string
+              ","
+              timestamp
+              ","
+              string
+              ","
+              string
+              ","
+              string
+              ","
+              decimal(18,
+              2)
+              ","
+              decimal(18,
+              2)
+              ","
+              string
+              ","
+              string
+              ","
+              string
+              ","
+              string
+              ","
+              string
+              ","
+              string
+              ","
+              string
+              ","
+              string
+              "],"
+              hadoopConfig
+              ":{"
+              fs.defaultFS
+              ":"
+              hdfs
+              :
+              //defan-poc:30116/","dfs.client.failover.proxy.provider.ns":"org.apache.hadoop.hdfs.server.namenode.ha.C
+              onfiguredFailoverProxyProvider
+              ","
+              dfs.client.use.datanode.hostname
+              ":"
+              true
+              ","
+              dfs.datanode.use.datanode.hostname
+              ":"
+              true
+              ","
+              fs.hdfs.impl.disable.cache
+              ":"
+              true
+              ","
+              fs.hdfs.impl
+              ":"
+              org.apache.hadoop.hdfs.DistributedFileSystem
+              "},"
+              path
+              ":"
+              hdfs
+              :
+              //defan-poc:30116/user/hive/warehouse/report_dev.db/ods_sales_warehousestore_eas2"},"tab
+              le
+              ":{"
+              tableName
+              ":"
+              sourceTable
+              "}},"
+              writer
+              ":{"
+              name
+              ":"
+              clickhousewriter
+              ","
+              parameter
+              ":{"
+              column
+              ":[{"
+              index
+              ":0,"
+              name
+              ":"
+              billtype
+              ","
+              type
+              ":"
+              String
+              "},{"
+              index
+              ":1,"
+              name
+              ":"
+              fcustclasstype
+              ","
+              type
+              ":"
+              String
+              "},{"
+              index
+              ":2,"
+              name
+              ":"
+              custtypenumber
+              ","
+              type
+              ":"
+              String
+              "},{"
+              index
+              ":3,"
+              name
+              ":"
+              fyear
+              ","
+              type
+              ":"
+              String
+              "}],"
+              connection
+              ":[{"
+              jdbcUrl
+              ":"
+              jdbc
+              :
+              c
+              lickhouse
+              ://192.168.5.126:8123/default","table":["dws_sales_report_from_hive"]}],"password":"Clickhouse","postSql":[],"preSql":["truncate table dws_sales_report_from_hive"],"username":"default"},"table":{"tableName":"sinkTable"}}}],"setting":{"errorLimit":{"record":0},"speed":{"bytes":104857600,"channel":1}}}
+
+
 
 
