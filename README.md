@@ -37,9 +37,9 @@ curl 'http://localhost:8080/clickhouse/testConnect' \
   -H 'Accept: application/json, text/plain, */*' \
   -H 'Accept-Language: zh-CN' \
   -H 'Content-Type: application/json;charset=UTF-8' \
-  --data-raw '{"jdbcUrl": "jdbc:clickhouse://8.142.144.100:30144/fanruan_db","username": "","password": ""}' 
+  --data-raw '{"jdbcUrl": "jdbc:clickhouse://1.1.1.1:1/fanruan_db","username": "","password": ""}' 
 ```
 
 #### 开发手册
 
-- https://github.com/ispong/spring-demo/blob/main/CONTRIBUTING.md
+- https://github.com/ispong/spring-demo/blob/main/CONTRIBUTING.md1
