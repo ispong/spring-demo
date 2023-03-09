@@ -33,11 +33,11 @@ curl 'http://localhost:8080/hello/say'
 - post请求样例
 
 ```bash
-curl 'http://localhost:8080/oracle/testConnect' \
+curl 'http://localhost:8080/clickhouse/testConnect' \
   -H 'Accept: application/json, text/plain, */*' \
   -H 'Accept-Language: zh-CN' \
   -H 'Content-Type: application/json;charset=UTF-8' \
-  --data-raw '{"jdbcUrl": "jdbc:oracle:thin:@isxcode:XE","username": "ispong","password": "ispong123"}' 
+  --data-raw '{"jdbcUrl": "jdbc:clickhouse://8.142.144.100:30144/fanruan_db","username": "","password": ""}' 
 ```
 
 #### 开发手册

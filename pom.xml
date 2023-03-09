@@ -37,7 +37,9 @@
 		<module>groovy-demo</module>
 		<module>guava-demo</module>
 		<module>command-demo</module>
-	</modules>
+        <module>hana-demo</module>
+        <module>clickhouse-demo</module>
+    </modules>
 
 	<dependencies>
 

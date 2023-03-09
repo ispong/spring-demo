@@ -1,9 +1,11 @@
-package com.isxcode.demo.oracle.controller;
+package com.isxcode.demo.hana.controller;
 
-import com.isxcode.demo.oracle.pojo.OracleReq;
+import com.isxcode.demo.hana.pojo.HanaReq;
 import lombok.extern.slf4j.Slf4j;
-import oracle.jdbc.proxy.annotation.Post;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,15 +14,15 @@ import java.util.Arrays;
 
 @Slf4j
 @RestController
-@RequestMapping("/oracle")
-public class OracleController {
+@RequestMapping("/hana")
+public class HanaController {
 
     @PostMapping("/testConnect")
-    public String testConnect(@RequestBody OracleReq oracleReq) {
+    public String testConnect(@RequestBody HanaReq oracleReq) {
 
         Connection connection = null;
         try {
-            Class.forName("oracle.jdbc.driver.OracleDriver");
+            Class.forName("com.sap.db.jdbc.Driver");
             connection = DriverManager.getConnection(oracleReq.getJdbcUrl(), oracleReq.getUsername(), oracleReq.getPassword());
             return connection == null ? "connect为空，连接失败" : "连接成功";
         } catch (ClassNotFoundException | SQLException e) {
@@ -41,10 +43,4 @@ public class OracleController {
         }
     }
 
-    @GetMapping("/queryCol")
-    public void queryCol() {
-
-
-
-    }
 }
