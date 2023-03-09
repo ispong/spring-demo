@@ -37,9 +37,8 @@ curl 'http://localhost:8080/clickhouse/testConnect' \
   -H 'Accept: application/json, text/plain, */*' \
   -H 'Accept-Language: zh-CN' \
   -H 'Content-Type: application/json;charset=UTF-8' \
-  --data-raw '{"jdbcUrl": "jdbc:clickhouse://8.142.144.100:30144/fanruan_db","username": "","password": "","sql":"select * from dwd_medcresdat limit 5"}' 
-#  --data '{"jdbcUrl": "jdbc:clickhouse://192.168.5.126:8123/df_test","username": "default","password": "Clickhouse"}' 
-# --data-raw '{"jdbcUrl": "jdbc:clickhouse://192.168.5.126:8123/df_test","username": "default","password": "Clickhouse"}' 
+  --data-raw '{"jdbcUrl": "jdbc:clickhouse://192.168.5.126:8123/df_test","username": "default","password": "Clickhouse"}'
+#  --data '{"jdbcUrl": "jdbc:clickhouse://192.168.5.126:8123/df_test","username": "default","password": "Clickhouse"}'   
 ```
 
 #### 开发手册
