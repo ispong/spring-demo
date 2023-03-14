@@ -39,6 +39,7 @@
 		<module>command-demo</module>
         <module>hana-demo</module>
         <module>clickhouse-demo</module>
+		<module>mysql-demo</module>
     </modules>
 
 	<dependencies>

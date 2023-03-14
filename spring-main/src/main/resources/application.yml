@@ -1,7 +1,17 @@
 server:
   port: 8080
 
-spring:
-  profiles:
-    include:
-      - solr
+#spring:
+#  profiles:
+#    include:
+#      - solr
+#spring:
+#  datasource:
+#    url: jdbc:mysql://1.1.1.1:30102/ispong_db?serverTimezone=Asia/Shanghai
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: root
+#    password: 123
+#    hikari:
+#      maximum-pool-size: 1
+#  jpa:
+#    database: mysql

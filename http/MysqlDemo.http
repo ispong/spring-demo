@@ -1,0 +1,31 @@
+###
+POST {{url}}/mysql/addDatasource
+Content-Type: application/json
+
+{
+  "url": "jdbc:mysql://1.1.11.1:30102/ispong_db?serverTimezone=Asia/Shanghai",
+  "username": "root",
+  "password": "123",
+  "name": "datasource4"
+}
+
+###
+GET {{url}}/mysql/printDataPool
+
+###
+GET {{url}}/mysql/executeSql
+
+###
+GET {{url}}/mysql/executeTemplate
+
+
+###
+POST {{url}}/mysql/addConnectToDao
+Content-Type: application/json
+
+{
+  "url": "jdbc:mysql://121.89.247.94:30102/ispong_db?serverTimezone=Asia/Shanghai",
+  "username": "root",
+  "password": "Define123...",
+  "name": "datasource4"
+}
